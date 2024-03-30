@@ -1,9 +1,9 @@
 {
-    "name": "snapwp/starter-theme",
+    "name": "snapwp/starter-theme-unseen",
     "type": "wordpress-theme",
     "license": "GPL-3.0-or-later",
     "description": "WordPress starter theme, utilising the SnapWP theme framework.",
-    "homepage": "https://github.com/snapwp/starter-theme",
+    "homepage": "https://github.com/snapwp/starter-theme-unseen",
     "authors": [
         {
             "name": "Jake Whiteley",
