@@ -1,12 +1,12 @@
-<div class="bg-white border-b mb-12 lg:mb-16">
-    <nav aria-label="Main navigation" class="flex justify-between container mx-auto py-8 px-4">
+<div class="fixed top left w-1/1 bg-white z-10">
+    <nav aria-label="Main navigation" class="container d-flex justify-between">
         <a href="{{ get_home_url() }}" aria-label="Back to homepage">
             {{ get_bloginfo('name') }}
         </a>
 
-        <ul role="menubar" aria-label="Main navigation" class="flex">
+        <ul role="menubar" aria-label="Main navigation" class="d-flex list-unstyled">
             @simplemenu('primary' as $item)
-                <li role="none" class="@unless($loop->last) mr-4 @endunless">
+                <li role="none" class="@unless($loop->last) mr-16 @endunless">
                     <a href="{{ $item->url }}" class="{{ $item->is_active ? 'font-bold' : '' }}" role="menuitem">
                         {{ $item->text }}
                     </a>

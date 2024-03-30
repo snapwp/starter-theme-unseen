@@ -9,14 +9,16 @@
 		@wphead
 	</head>
 
-	<body class="{{ implode(' ', get_body_class()) }} bg-gray-50">
+	<body class="{{ implode(' ', get_body_class()) }} ">
         @include('partials.navigation')
 
-        <div class="container mx-auto px-4">
-			@yield('main')
-
-            @include('partials.footer')
-        </div>
+        <main class="scroll-container">
+            <div data-taxi>
+                <div data-taxi-view="{{ $taxi_view ?? 'default' }}">
+                    @yield('main')
+                </div>
+            </div>
+        </main>
 
 		@wpfooter
 	</body>

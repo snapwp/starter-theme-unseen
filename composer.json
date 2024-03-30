@@ -13,9 +13,6 @@
     "keywords": [
         "wordpress"
     ],
-    "options": {
-        "symlink": true
-    },
     "require": {
         "php": "^8.1",
         "snapwp/snap-core": "^0.19",

@@ -50,7 +50,7 @@ class Bootstrap extends Theme
     {
         // If using vite:
         Vite::registerScript('resources/assets/js/theme.js');
-        Vite::registerStyle('resources/assets/sass/style.scss');
+        Vite::registerStyle('resources/assets/scss/style.scss');
     }
 
     /**
