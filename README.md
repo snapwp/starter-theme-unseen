@@ -1,1 +1,1 @@
-# starter-theme-unseen
+# Unseen Studio Starter Theme

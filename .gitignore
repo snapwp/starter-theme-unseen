@@ -1,0 +1,14 @@
+node_modules/
+.DS_Store
+*.DS_Store*
+.idea/
+.vscode
+
+cache/templates/*
+!cache/templates/index.php
+.env
+!*/vendor
+/vendor
+public/manifest.json
+public/build/
+public/hot

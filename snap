@@ -1,0 +1,4 @@
+#!/usr/bin/env php
+<?php
+// Include the snap executable
+require(__DIR__ . '/vendor/snapwp/snap-core/bin/snap');
