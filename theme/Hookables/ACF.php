@@ -14,7 +14,6 @@ class ACF extends Hookable
         }
 
         $this->addFilter('acf/settings/save_json', 'acfJsonSavePath');
-        $this->addFilter('acf/json/save_file_name', 'acfJsonFileName');
         $this->addFilter('acf/settings/load_json', 'acfJsonSavePath');
     }
 
@@ -50,13 +49,5 @@ class ACF extends Hookable
     public function acfJsonSavePath(): string
     {
         return Theme::getActiveThemePath('resources/acf');
-    }
-
-    /**
-     * Save ACF JSON files with post title as filename.
-     */
-    public function acfJsonFileName($filename, $post): string
-    {
-        return sanitize_title($post['title']) . '.json';
     }
 }
